@@ -1,0 +1,26 @@
+{
+  "format": "avsim-studio/1",
+  "params": {},
+  "policy": {},
+  "hazards": [
+    {
+      "type": "bike",
+      "lane": "E2",
+      "x": 40.0,
+      "d": 0.0,
+      "v": 4.0,
+      "swerve": 2.8,
+      "swDur": 2.4,
+      "t0": 0.0,
+      "trig": 11.0
+    }
+  ],
+  "space": {
+    "h0_x": [30.0, 50.0],
+    "h0_swerve": [2.4, 3.0],
+    "h0_swDur": [2.2, 2.6],
+    "h0_trig": [9.0, 14.0]
+  },
+  "exposure": 0.04,
+  "why": "Xe đạp di chuyển ở làn E2 bất ngờ lạng sang trái 2.4 - 3.0 m (lấn qua vạch phân làn vào giữa làn E1 của xe ta) để tránh ổ gà hoặc vật cản mặt đường: theo nghiên cứu an toàn xe hai bánh đô thị (NHTSA DOT HS 812 018 và cẩm nang thiết kế hạ tầng xe đạp NACTO), hành vi lạng tránh đột ngột diễn ra trong 2.2 - 2.6 s với gia tốc ngang đỉnh dưới 3.0 m/s^2 (đảm bảo xe đạp không bị trượt ngã). Tần suất xuất hiện ước tính khoảng 0.04 lần/chuyến đi đô thị (khoảng 1 lần trong 25 chuyến đi). Khi xe ta tiếp cận trong khoảng cách kích hoạt 9 - 14 m ở vận tốc 10-12 m/s, phanh khẩn cấp kịch lốp ngay khi thấy xe đạp lấn làn hoàn toàn có thể dừng xe trong khoảng 9.5 m (tránh được bằng phanh hết cỡ), nhưng cả planner gốc lẫn bản sửa ở bước E đều phanh theo IDM quá êm nên không dừng kịp và xảy ra va chạm."
+}
